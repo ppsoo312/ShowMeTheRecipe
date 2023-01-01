@@ -1,8 +1,8 @@
 package com.smtr.folder;
 
 public class FolderVO {
-	private int folderNo; // 주석 다 깨짐 
-	private String folderName; // ��ũ�������̸�
+	private int folderNo; // 폴더 시퀀스
+	private String folderName; // 폴더명
 	
 	public FolderVO(int folderNo, String folderName) {
 		this.folderNo = folderNo;
