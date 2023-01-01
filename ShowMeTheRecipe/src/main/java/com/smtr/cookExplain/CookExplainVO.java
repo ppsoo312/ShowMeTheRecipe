@@ -1,9 +1,9 @@
 package com.smtr.cookExplain;
 
 public class CookExplainVO {
-	private int stepNo; // ¿ä¸®¼ø¼­½ÃÄö½º
-	private String content; // ¿ä¸®¼³¸í
-	private String stepImg; // ¿ä¸® ÀÌ¹ÌÁö
+	private int stepNo; // ï¿½ä¸®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String content; // ï¿½ä¸®ï¿½ï¿½ï¿½ï¿½
+	private String stepImg; // ï¿½ä¸® ï¿½Ì¹ï¿½ï¿½ï¿½
 	
 	public CookExplainVO(int stepNo, String content, String stepImg) {
 		this.stepNo = stepNo;
