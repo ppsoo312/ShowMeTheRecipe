@@ -1,12 +1,12 @@
 package com.smtr.member;
 
 public class MemberVO {
-	private int memNo; // È¸¿ø ½ÃÄö½º
-	private String email; // ÀÌ¸ŞÀÏ -> ¾ÆÀÌµğ·Î »ç¿ë
-	private String password; // ºñ¹Ğ¹øÈ£
-	private String nickName; // ´Ğ³×ÀÓ
-	private String photoPath; // ÇÁ·ÎÇÊ»çÁø °æ·Î
-	private int kind; // 0-Ä«Ä«¿À, 1-³×ÀÌ¹ö, 2-±¸±Û, 3-ÆäÀÌ½ººÏ
+	private int memNo; // íšŒì› ì‹œí€€ìŠ¤
+	private String email; // ì´ë©”ì¼(id)ë¡œ ì‚¬ìš©
+	private String password; // ë¹„ë°€ë²ˆí˜¸
+	private String nickName; // ë‹‰ë„¤ì„(ìœ ì¼)
+	private String photoPath; // í”„ë¡œí•„ì‚¬ì§„ ê²½ë¡œ
+	private int kind; // 0-ì¹´ì¹´ì˜¤ë¡œê·¸ì¸, 1-ë„¤ì´ë²„, 2-êµ¬ê¸€, 3-í˜ì´ìŠ¤ë¶
 	
 	public MemberVO(int memNo, String email, String password,
 			String nickName, String photoPath, int kind) {

@@ -2,8 +2,8 @@ package com.smtr.follow;
 
 public class FollowVO {
 	private int followNo;
-	private int followerMemNo; // 팔로워 memNo를 이용해 member 테이블 접근해서 닉네임가져오기 위해 사용
-	private int followingMemNo; // 팔로잉 memNo를 이용해 member 테이블 접근해서 닉네임 가져오기 위해 사용
+	private int followerMemNo; // 
+	private int followingMemNo; // 
 	
 	public FollowVO(int followNo, int followerMemNo, int followingMemNo) {
 		this.followNo = followNo;
