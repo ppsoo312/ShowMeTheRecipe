@@ -1,11 +1,11 @@
 package com.smtr.division;
 
-public class DivisionVO {
-	private int divNo; // ºĞ·ù½ÃÄö½º
-	private int ganreNo; // Á¾·ùº°½ÃÄö½º
-	private int ingreNo; // Àç·áº°½ÃÄö½º
-	private int situNo; // »óÈ²º°½ÃÄö½º
-	private int cookeryNo; // Á¶¸®º°½ÃÄö½º
+public class DivisionVO { // ì•„ë‹ˆ ë‚´ í”„ë¡œì íŠ¸ì—ì„œë„ ë‹¤ ì£¼ì„ê¹¨ì ¸ì„œ ë³´ì´ë„¤
+	private int divNo; // ï¿½Ğ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int ganreNo; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int ingreNo; // ï¿½ï¿½áº°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int situNo; // ï¿½ï¿½È²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int cookeryNo; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
 	public DivisionVO(int divNo, int ganreNo, int ingreNo, int situNo, int cookeryNo) {
 		this.divNo = divNo;
