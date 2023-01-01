@@ -1,6 +1,6 @@
 package com.smtr.division;
 
-public class DivisionVO { // 아니 내 프로젝트에서도 다 주석깨져서 보이네
+public class DivisionVO { // 아니 내 프로젝트에서도 다 주석깨져서 보이네 하위
 	private int divNo; // �з�������
 	private int ganreNo; // ������������
 	private int ingreNo; // ��Ằ������
