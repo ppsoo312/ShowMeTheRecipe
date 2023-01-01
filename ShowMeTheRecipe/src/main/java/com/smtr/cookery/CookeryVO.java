@@ -2,7 +2,7 @@ package com.smtr.cookery;
 
 public class CookeryVO {
 	private int cookeryNo; // 방법별 시퀀스
-	private String cookery; // 방법별 이름
+	private String cookery; // 방법별 이름쓰기
 	
 	public CookeryVO() {
 		
