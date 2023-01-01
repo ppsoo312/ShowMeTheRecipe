@@ -1,4 +1,4 @@
-package com.increpas.myhome;
+package com.increpas.showMeTheRecipe;
 
 import java.text.DateFormat;
 import java.util.Date;
