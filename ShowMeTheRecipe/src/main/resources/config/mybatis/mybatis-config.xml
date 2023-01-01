@@ -11,8 +11,7 @@
 	
 	<typeAliases>
 		<typeAlias type="common.Paging" alias="paging"/>
-		<typeAlias type="vo.member.MemberVO" alias="member"/>
-		<typeAlias type="vo.board.BoardVO" alias="board"/>
+
 	</typeAliases>
 	
 	<mappers>
