@@ -3,7 +3,7 @@ package com.smtr.cookExplain;
 public class CookExplainVO {
 	private int stepNo; // �丮����������
 	private String content; // �丮����
-	private String stepImg; 
+	private String stepImg; // �丮 �̹���
 	
 	public CookExplainVO(int stepNo, String content, String stepImg) {
 		this.stepNo = stepNo;
