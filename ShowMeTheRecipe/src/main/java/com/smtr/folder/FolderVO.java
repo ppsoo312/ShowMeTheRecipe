@@ -1,8 +1,8 @@
 package com.smtr.folder;
 
 public class FolderVO {
-	private int folderNo; // ½ºÅ©·¦Æú´õ½ÃÄö½º
-	private String folderName; // ½ºÅ©·¦Æú´õÀÌ¸§
+	private int folderNo; // ì£¼ì„ ë‹¤ ê¹¨ì§ 
+	private String folderName; // ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½
 	
 	public FolderVO(int folderNo, String folderName) {
 		this.folderNo = folderNo;
