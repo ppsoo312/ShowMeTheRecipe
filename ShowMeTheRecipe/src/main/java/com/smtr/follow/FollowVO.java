@@ -1,10 +1,13 @@
 package com.smtr.follow;
 
 public class FollowVO {
-	private int followNo;
-	private int followerMemNo; // 
-	private int followingMemNo; // 
+	private int followNo; // 팔로워 시퀀스
+	private int followerMemNo; // 팔로워 아이디 - 주체를 팔로우하는사람
+	private int followingMemNo; // 팔로잉 아이디 - 주체가 팔로우하는사람
 	
+	public FollowVO() {
+		
+	}
 	public FollowVO(int followNo, int followerMemNo, int followingMemNo) {
 		this.followNo = followNo;
 		this.followerMemNo = followerMemNo;

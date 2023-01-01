@@ -3,13 +3,17 @@ package com.smtr.file;
 import java.sql.Date;
 
 public class FileVO {
-	private int fileNo; // »çÁøÃ·ºÎ ½ÃÄö½º
-	private String originFile; // ½ÇÁ¦ÆÄÀÏ¸í
-	private String serverName; // ¼­¹öÀÌ¸§
-	private String serverPath; // ¼­¹öÁÖ¼Ò
-	private String extension; // È®ÀåÀÚ
-	private int size; // ÆÄÀÏÅ©±â
-	private Date registDate; // ¾÷·Îµå ½Ã°£
+	private int fileNo; // ì‚¬ì§„ ì²¨ë¶€ ì‹œí€€ìŠ¤
+	private String originFile; // ì‹¤ì œ íŒŒì¼ëª…
+	private String serverName; // ì„œë²„ íŒŒì¼ ì´ë¦„
+	private String serverPath; // ì„œë²„ íŒŒì¼ ê²½ë¡œ
+	private String extension; // í™•ì¥ì
+	private int size; // íŒŒì¼ í¬ê¸°
+	private Date registDate; // ì—…ë¡œë“œ ì‹œê°„
+	
+	public FileVO() {
+		
+	}
 	
 	public FileVO(int fileNo, String originFile, String serverName,
 			String serverPath, String extension, int size, Date registDate) {

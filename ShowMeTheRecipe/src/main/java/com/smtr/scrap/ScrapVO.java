@@ -1,11 +1,14 @@
 package com.smtr.scrap;
 
 public class ScrapVO {
-	private int scrapNo; // ½ºÅ©·¦½ÃÄö½º
-	private int recipeNo; // ·¹½ÃÇÇ½ÃÄö½º
-	private int folderNo; // ½ºÅ©·¦Æú´õ ½ÃÄö½º
-	private int memNo; // È¸¿ø½ÃÄö½º
+	private int scrapNo; // ìŠ¤í¬ë© ì‹œí€€ìŠ¤
+	private int recipeNo; // ë ˆì‹œí”¼ ì‹œí€€ìŠ¤
+	private int folderNo; // ìŠ¤í¬ë©í´ë” ì‹œí€€ìŠ¤
+	private int memNo; // íšŒì›ì‹œí€€ìŠ¤ - í´ë” ì£¼ì¸
 	
+	public ScrapVO() {
+		
+	}
 	public ScrapVO(int scrapNo, int recipeNo, int folderNo, int memNo) {
 		this.scrapNo = scrapNo;
 		this.recipeNo = recipeNo;

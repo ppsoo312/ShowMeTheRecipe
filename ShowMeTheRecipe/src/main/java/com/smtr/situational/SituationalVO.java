@@ -1,11 +1,32 @@
 package com.smtr.situational;
 
 public class SituationalVO {
-	private int situNo; // »óÈ²º° ½ÃÄö½º
-	private String situation; // »óÈ²º° ÀÌ¸§
+	private int situNo; // ìƒí™©ë³„ ì‹œí€€ìŠ¤
+	private String situation; // ìƒí™©ë³„ ì´ë¦„
+	
+	public SituationalVO() {
+		
+	}
 	
 	public SituationalVO(int situNo, String situation) {
 		this.situNo = situNo;
 		this.situation = situation;
 	}
+
+	public int getSituNo() {
+		return situNo;
+	}
+
+	public void setSituNo(int situNo) {
+		this.situNo = situNo;
+	}
+
+	public String getSituation() {
+		return situation;
+	}
+
+	public void setSituation(String situation) {
+		this.situation = situation;
+	}
+	
 }

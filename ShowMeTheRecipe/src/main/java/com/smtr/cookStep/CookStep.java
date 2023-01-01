@@ -1,9 +1,12 @@
 package com.smtr.cookStep;
 
 public class CookStep {
-	private int stepNo; // ¿ä¸®¼ø¼­½ÃÄö½º
-	private int recipeNo; // ·¹½ÃÇÇ½ÃÄö½º
+	private int stepNo; // ìš”ë¦¬ìˆœì„œ ì‹œí€€ìŠ¤
+	private int recipeNo; // ë ˆì‹œí”¼ ì‹œí€€ìŠ¤
 	
+	public CookStep() {
+		
+	}
 	public CookStep(int stepNo, int recipeNo) {
 		this.stepNo = stepNo;
 		this.recipeNo = recipeNo;

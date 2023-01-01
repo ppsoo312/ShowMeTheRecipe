@@ -8,6 +8,10 @@ public class MemberVO {
 	private String photoPath; // 프로필사진 경로
 	private int kind; // 0-카카오로그인, 1-네이버, 2-구글, 3-페이스북
 	
+	public MemberVO() {
+		
+	}
+	
 	public MemberVO(int memNo, String email, String password,
 			String nickName, String photoPath, int kind) {
 		this.memNo = memNo;

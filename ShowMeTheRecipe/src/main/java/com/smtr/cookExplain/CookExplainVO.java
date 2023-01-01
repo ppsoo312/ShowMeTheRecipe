@@ -1,10 +1,13 @@
 package com.smtr.cookExplain;
 
 public class CookExplainVO {
-	private int stepNo; // �丮����������
-	private String content; // �丮����
-	private String stepImg; // �丮 �̹���
+	private int stepNo; // 요리 순서 시퀀스
+	private String content; // 요리 설명
+	private String stepImg; // 요리 이미지
 	
+	public CookExplainVO() {
+		
+	}
 	public CookExplainVO(int stepNo, String content, String stepImg) {
 		this.stepNo = stepNo;
 		this.content = content;

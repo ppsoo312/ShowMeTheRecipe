@@ -3,20 +3,23 @@ package com.smtr.recipe;
 import java.sql.Date;
 
 public class RecipeVO {
-	private int recipeNo;
-	private int cooker; // ÀÛ¼ºÀÚ memNo
-	private String title; // Á¦¸ñ
-	private String intro; // ¼Ò°³
-	private String movieLink; // ¿µ»ó¸µÅ©
-	private int divNo; // ºĞ·ù ½ÃÄö½º
-	private String level; // ³­ÀÌµµ
-	private String time; // Á¶¸®½Ã°£
-	private String quantity; // ¿ä¸®·®
-	private int hit; // Á¶È¸¼ö
-	private Date date; // µî·Ï ³¯Â¥
-	private int scrapCnt; // ½ºÅ©·¦¼ö
-	private String mainImg; // ½æ³×ÀÏ
+	private int recipeNo; // ë ˆì‹œí”¼ ì‹œí€€ìŠ¤
+	private int cooker; // ì‘ì„±ì ì‹œí€€ìŠ¤ -> memNo
+	private String title; // ì œëª©
+	private String intro; // ë ˆì‹œí”¼ ì†Œê°œ
+	private String movieLink; // ì˜ìƒ ë§í¬ ì£¼ì†Œ
+	private int divNo; // ë¶„ë¥˜ ì‹œí€€ìŠ¤
+	private String level; // ë‚œì´ë„
+	private String time; // ì¡°ë¦¬ ì‹œê°„
+	private String quantity; // ìš”ë¦¬ì–‘
+	private int hit; // ì¡°íšŒìˆ˜
+	private Date date; // ì‘ì„±ì¼
+	private int scrapCnt; // ìŠ¤í¬ë©ìˆ˜
+	private String mainImg; // ì¸ë„¤ì¼ ì´ë¯¸ì§€ ê²½ë¡œ
 	
+	public RecipeVO() {
+		
+	}
 	public RecipeVO(int recipeNo, int cooker, String title, String intro, String movieLink, int divNo, String level,
 			String time, String quantity, int hit, Date date, int scrapCnt, String mainImg) {
 		this.recipeNo = recipeNo;

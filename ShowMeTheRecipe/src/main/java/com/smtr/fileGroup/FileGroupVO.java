@@ -1,10 +1,13 @@
 package com.smtr.fileGroup;
 
 public class FileGroupVO {
-	private int fileGroup; // ÆÄÀÏ±×·ì ½ÃÄö½º
-	private int recipeNo; // ·¹½ÃÇÇ ½ÃÄö½º
-	private int fileNo; // »çÁøÃ·ºÎ ½ÃÄö½º
+	private int fileGroup; // íŒŒì¼ ê·¸ë£¹ ì‹œí€€ìŠ¤
+	private int recipeNo; // ë ˆì‹œí”¼ ì‹œí€€ìŠ¤
+	private int fileNo; // ì‚¬ì§„ ì²¨ë¶€ ì‹œí€€ìŠ¤
 	
+	public FileGroupVO() {
+		
+	}
 	public FileGroupVO(int fileGroup, int recipeNo, int fileNo) {
 		this.fileGroup = fileGroup;
 		this.recipeNo = recipeNo;

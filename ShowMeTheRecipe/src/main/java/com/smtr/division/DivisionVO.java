@@ -1,11 +1,15 @@
 package com.smtr.division;
 
-public class DivisionVO { // 아니 내 프로젝트에서도 다 주석깨져서 보이네 하위
-	private int divNo; // �з�������
-	private int ganreNo; // ������������
-	private int ingreNo; // ��Ằ������
-	private int situNo; // ��Ȳ��������
-	private int cookeryNo; // ������������
+public class DivisionVO { 
+	private int divNo; // 분류 시퀀스
+	private int ganreNo; // 종류별 시퀀스
+	private int ingreNo; // 재료별 시퀀스
+	private int situNo; // 상황별 시퀀스
+	private int cookeryNo; // 조리별 시퀀스
+	
+	public DivisionVO() {
+		
+	}
 	
 	public DivisionVO(int divNo, int ganreNo, int ingreNo, int situNo, int cookeryNo) {
 		this.divNo = divNo;

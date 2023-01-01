@@ -3,16 +3,19 @@ package com.smtr.review;
 import java.sql.Date;
 
 public class Review {
-	private int reviewNo; // ¸®ºä ½ÃÄö½º
-	private int recipeNo; // ·¹½ÃÇÇ ½ÃÄö½º
-	private int rvWriter; // ¸®ºä ÀÛ¼ºÀÚ memNoÀÇ¹Ì
-	private String rvContent; // ¸®ºä ³»¿ë
-	private int score; // ÆòÁ¡
-	private String filePath; // ÆÄÀÏÃ·ºÎ
-	private Date rvDate; // ÀÛ¼ºÀÏ
+	private int reviewNo; // ë¦¬ë·° ì‹œí€€ìŠ¤
+	private int recipeNo; // ë ˆì‹œí”¼ ì‹œí€€ìŠ¤
+	private int rvWriter; // ë¦¬ë·° ì‘ì„±ì -> ë¦¬ë·° ì“´ íšŒì› ì‹œí€€ìŠ¤
+	private String rvContent; // ë¦¬ë·° ë‚´ìš©
+	private float score; // í‰ì 
+	private String filePath; // íŒŒì¼ì²¨ë¶€ ê²½ë¡œ
+	private Date rvDate; // ì‘ì„±ì¼
 	
+	public Review() {
+		
+	}
 	public Review(int reviewNo, int recipeNo, int rvWriter, String rvContent,
-			int score, String filePath, Date rvDate) {
+			float score, String filePath, Date rvDate) {
 		this.reviewNo = reviewNo;
 		this.recipeNo = recipeNo;
 		this.rvWriter = rvWriter;
@@ -54,11 +57,11 @@ public class Review {
 		this.rvContent = rvContent;
 	}
 
-	public int getScore() {
+	public float getScore() {
 		return score;
 	}
 
-	public void setScore(int score) {
+	public void setScore(float score) {
 		this.score = score;
 	}
 

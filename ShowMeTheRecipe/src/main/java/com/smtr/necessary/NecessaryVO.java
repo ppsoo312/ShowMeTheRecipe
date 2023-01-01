@@ -1,10 +1,14 @@
 package com.smtr.necessary;
 
 public class NecessaryVO {
-	private int necessaryNo; // Àç·á ½ÃÄö½º
-	private String necessary; // Àç·á¸í
-	private int bundleNo; // Àç·á¹­À½ ½ÃÄö½º
-	private int recipeNo; // ·¹½ÃÇÇ ½ÃÄö½º
+	private int necessaryNo; // ì¬ë£Œ ì‹œí€€ìŠ¤
+	private String necessary; // ì¬ë£Œëª…
+	private int bundleNo; // ì¬ë£Œ ë¬¶ìŒ ì‹œí€€ìŠ¤
+	private int recipeNo; // ë ˆì‹œí”¼ ì‹œí€€ìŠ¤
+	
+	public NecessaryVO() {
+		
+	}
 	
 	public NecessaryVO(int necessaryNo, String necessary, int bundleNo, int recipeNo) {
 		this.necessaryNo = necessaryNo;
