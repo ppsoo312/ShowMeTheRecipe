@@ -9,7 +9,6 @@ import vo.board.BoardVO;
 
 public class BoardService {
 
-	public BoardDAO boardDao;
 	public MemberDAO memberDao;
 	
 	public void setBoardDao(BoardDAO boardDao) {
@@ -44,7 +43,9 @@ public class BoardService {
 	}
 	
 	public BoardVO selectSeq(int seq) {
+		
 		return boardDao.selectSeq(seq);
+		
 	}
 	
 	
