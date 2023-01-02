@@ -15,7 +15,7 @@
 	</typeAliases>
 	
 	<mappers>
-		<!-- <mapper resource="config/mybatis/mapper/member.xml"/>
-		<mapper resource="config/mybatis/mapper/board.xml"/> -->
+		<mapper resource="config/mybatis/mapper/recipe.xml"/>
+		<!-- <mapper resource="config/mybatis/mapper/board.xml"/> -->
 	</mappers>
 </configuration>
