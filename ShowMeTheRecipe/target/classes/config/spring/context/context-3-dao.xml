@@ -5,8 +5,8 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	
-	<!-- <bean id="memberDao" class="dao.member.MemberDAO">
+	<bean id="recipeDao" class="com.smtr.recipe.RecipeDAO">
 		<constructor-arg ref="sqlSession"/>
-	</bean> -->
+	</bean>
 	
 </beans>
