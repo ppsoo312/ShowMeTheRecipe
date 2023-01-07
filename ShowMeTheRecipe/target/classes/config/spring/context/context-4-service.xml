@@ -8,5 +8,9 @@
 		<property name="recipeDao" ref="recipeDao"/>
 	</bean>
 	
+	<bean id="divisionService" class="com.smtr.division.DivisionService">
+		<property name="divisionDao" ref="divisionDao"/>
+	</bean>
+	
 	
 </beans>

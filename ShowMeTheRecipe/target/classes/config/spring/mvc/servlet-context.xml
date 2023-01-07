@@ -44,6 +44,8 @@
 	
 	 <beans:bean class="com.smtr.controller.SearchController">
 	 	<beans:constructor-arg ref="recipeService"/>
+	 	<beans:constructor-arg ref="divisionService"/>
+	 	
 	</beans:bean> 
 	
 	
