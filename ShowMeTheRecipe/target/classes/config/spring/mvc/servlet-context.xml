@@ -40,9 +40,10 @@
 	
 	<context:component-scan base-package="com.increpas.showMeTheRecipe" />
 	
-	<!-- <beans:bean class="controller.member.MemberController">
-		<beans:constructor-arg ref="memberService"/>
-	</beans:bean> -->
+	
+	<beans:bean class="com.smtr.controller.LoginController">
+		<!-- <beans:constructor-arg ref="memberService"/> -->
+	</beans:bean>
 	
 	
 	

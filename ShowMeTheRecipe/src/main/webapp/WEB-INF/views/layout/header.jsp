@@ -29,7 +29,7 @@
 <script type="text/javascript" src="${ pageContext.request.contextPath }/resources/summernote/summernote-lite.js"></script>
 <script type="text/javascript" src="${ pageContext.request.contextPath }/resources/summernote/lang/summernote-ko-KR.js"></script>
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/summernote/summernote-lite.css">
-<title>Hidden Gosu</title>
+<title>ShowMeTheRecipe</title>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="This is meta description">
@@ -86,18 +86,22 @@
 		<c:choose>
 			<c:when test="${empty login}">
 				<div class="mr-3">
-					<img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgPro.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 50px">
+					<a href="${ pageContext.request.contextPath }/login/login"><img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgPro.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 50px"></a>
+				</div>
+		
+				<div class="mr-3">
+					<img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgWrite.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 20px">
+				</div>			
+			</c:when>
+			<c:otherwise>
+				<div class="mr-3">
+					<img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/kate-stone.jpg" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 50px">
 				</div>
 		
 				<div class="mr-3">
 					<img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgWrite.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 20px">
 				</div>
-				<%-- <ul class="loginForm">
-					<li class="nav-item loginForm">
-						<a class="nav-link" href="${ pageContext.request.contextPath }/login/loginForm">로그인</a>
-					</li>
-				</ul> --%>
-			</c:when>
+			</c:otherwise>
 				
 			</c:choose>
 

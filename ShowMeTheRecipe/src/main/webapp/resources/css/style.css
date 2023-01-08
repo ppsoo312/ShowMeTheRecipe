@@ -66,11 +66,29 @@ h6, .h6 {
 .tSize{
 	font-size: 10px;
 }
+
+.inputText {
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 3;
+}
 .footerColor {
 	background-color: #00CC00;
 }
 .footerColor1 {
 	background-color: #289f5d;
+}
+.loginFormStyle {
+	font-size: 40px;
+	color: white;
+}
+.christTemaBack {
+	background-image: url("https://i.imgur.com/rnmeb5s.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
 }
 
 /* Button style */
@@ -491,6 +509,24 @@ mark {
 .banner .container {
   position: relative;
   z-index: 1;
+}
+.container5 {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.loginH3 {
+	margin-top: 100px;
+	color: white;
+}
+.loginH3_1 {
+	margin-top: 30px;
+
+	margin-bottom: 20px;
+}
+.kakaoB {
+	margin-top: 50px;
 }
 .banner-shape-1 {
   position: absolute;
