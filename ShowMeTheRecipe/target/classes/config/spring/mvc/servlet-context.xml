@@ -42,11 +42,18 @@
 	
 	<context:component-scan base-package="com.increpas.showMeTheRecipe" />
 	
+
+	
+	<beans:bean class="com.smtr.controller.LoginController">
+		<!-- <beans:constructor-arg ref="memberService"/> -->
+	</beans:bean>
+
 	 <beans:bean class="com.smtr.controller.SearchController">
 	 	<beans:constructor-arg ref="recipeService"/>
 	 	<beans:constructor-arg ref="divisionService"/>
 	 	
 	</beans:bean> 
+
 	
 	
 	
