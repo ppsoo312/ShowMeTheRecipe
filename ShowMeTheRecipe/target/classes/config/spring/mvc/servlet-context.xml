@@ -37,13 +37,21 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean> -->
+		<!-- AutoWiried 를 이용할 때 객체를 수동 생성시 에러 발생 -->
+	<context:annotation-config />
 	
 	<context:component-scan base-package="com.increpas.showMeTheRecipe" />
 	
+
 	
 	<beans:bean class="com.smtr.controller.LoginController">
 		<!-- <beans:constructor-arg ref="memberService"/> -->
 	</beans:bean>
+
+	 <beans:bean class="com.smtr.controller.SearchController">
+	 	<beans:constructor-arg ref="recipeService"/>
+	</beans:bean> 
+
 	
 	
 	
