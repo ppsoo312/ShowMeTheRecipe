@@ -5,8 +5,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="recipe"><!-- SQL 문들을 파일마다 구분할 수 있는 이름.... -->
 	
 	<select id="ganreTotal" resultType="com.smtr.ganre.GanreVO">
-		select ganre from ganre
+		select * from ganre
 	</select>
+	
+	<select id="ingredientTotal" resultType="com.smtr.ingredient.IngredientVO">
+		select * from ingredient
+	</select>
+	
+	<select id="situationTotal" resultType="com.smtr.situational.SituationalVO">
+		select * from situational
+	</select>
+	
+	<select id="cookeryTotal" resultType="com.smtr.cookery.CookeryVO">
+		select * from cookery
+	</select>
+	
 	
 </mapper>
 

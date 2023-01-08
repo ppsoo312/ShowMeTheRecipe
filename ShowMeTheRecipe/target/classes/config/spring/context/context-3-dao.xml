@@ -9,4 +9,8 @@
 		<constructor-arg ref="sqlSession"/>
 	</bean>
 	
+	<bean id="divisionDao" class="com.smtr.division.DivisionDAO">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
 </beans>

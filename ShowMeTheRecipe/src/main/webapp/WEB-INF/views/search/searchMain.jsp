@@ -8,32 +8,36 @@
 			<th>종류별</th>
 			<td class="division"><a
 				href="${ pageContext.request.contextPath }/search/total">전체</a></td>
-			<c:forEach var="i" items="${list }">
-				<td class="division">리스트</td>
+			<c:forEach var="i" items="${ganreList }">
+				<td class="division"><a
+				href="${ pageContext.request.contextPath }/search/total">${i.ganre}</a></td>
 			</c:forEach>
 		</tr>
 		<tr>
 			<th>상황별</th>
 			<td class="division"><a
 				href="${ pageContext.request.contextPath }/search/total">전체</a></td>
-			<c:forEach var="i" items="${list }">
-				<td class="division">리스트</td>
+			<c:forEach var="i" items="${ingredientList }">
+				<td class="division"><a
+				href="${ pageContext.request.contextPath }/search/total">${i.ingredient}</a></td>
 			</c:forEach>
 		</tr>
 		<tr>
 			<th>재료별</th>
 			<td class="division"><a
 				href="${ pageContext.request.contextPath }/search/total">전체</a></td>
-			<c:forEach var="i" items="${list }">
-				<td class="division">리스트</td>
+			<c:forEach var="i" items="${situationList }">
+				<td class="division"><a
+				href="${ pageContext.request.contextPath }/search/total">${i.situation}</a></td>
 			</c:forEach>
 		</tr>
 		<tr>
 			<th>방법별</th>
 			<td class="division"><a
 				href="${ pageContext.request.contextPath }/search/total">전체</a></td>
-			<c:forEach var="i" items="${list }">
-				<td class="division">리스트</td>
+			<c:forEach var="i" items="${cookeryList }">
+				<td class="division"><a
+				href="${ pageContext.request.contextPath }/search/total">${i.cookery}</a></td>
 			</c:forEach>
 		</tr>
 	</table>

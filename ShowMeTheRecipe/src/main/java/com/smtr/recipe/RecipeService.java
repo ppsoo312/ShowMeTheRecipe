@@ -12,8 +12,6 @@ public class RecipeService {
 		this.recipeDao=recipeDao;
 	}
 	
-	public List<String> ganreList() {
-		return recipeDao.ganreList();
-	}
+	
 	
 }

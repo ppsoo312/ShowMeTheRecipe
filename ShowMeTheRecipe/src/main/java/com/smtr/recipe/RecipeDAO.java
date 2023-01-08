@@ -14,7 +14,5 @@ public class RecipeDAO {
 		this.sqlSession=sqlSession;
 	}
 	
-	public List<String> ganreList() {
-		return sqlSession.selectList("recipe.ganreTotal");
-	}
+
 }
