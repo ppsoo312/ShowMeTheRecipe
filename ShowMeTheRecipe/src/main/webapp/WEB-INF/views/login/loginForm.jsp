@@ -17,7 +17,20 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script src="${ pageContext.request.contextPath }/resources/js/httpRequest.js"></script>
-
+<script type="text/javascript">
+	function check() {
+		if(document.input.email.value == ""){
+			alert("아이디를 입력해주세요");
+			document.input.email.focus();
+		} else if(document.input.password.value == "") {
+			alert("비밀번호를 입력해주세요");
+			document.input.password.focus();
+		} else {
+			document.input.submit();
+		}
+	
+	}
+</script>
 <body>
 <!-- <div class="container2 footerColor1">
 	<div align="center" class="loginFormStyle">
@@ -36,21 +49,23 @@
 <div align="center" class="container">
 	<a href="javascript:kakaoLogin();"><img class="kakaoB" src="../resources/images/kakao_loginM.png" alt="카카오계정 로그인" style="height: 40px;"/></a>
 	<br><br><strong> OR </strong><br>
-	<div class="loginH3_1">
-		<input class="inputText" type="text" name="email" placeholder="아이디">
-		<input class="inputText" type="text" name="password" placeholder="비밀번호">
-		<br>
-		<c:choose>
-			<c:when test="${check }">
-				<br><input type="checkbox" name="ckid" value="true" checked="checked">
-			</c:when>
-			<c:otherwise>
-				<br><input type="checkbox" name="ckid" value="true"> 로그인 상태 유지
-			</c:otherwise>
-		</c:choose>
-
-		<br><input type="submit" value="Login" style="margin-top: 10px">
-	</div>
+	<form action="${ pageContext.request.contextPath }/login/check?loginKind=2" method="post" name="input" onclick="check()">
+		<div class="loginH3_1">
+			<input class="inputText" type="text" name="email" placeholder="아이디">
+			<input class="inputText" type="text" name="password" placeholder="비밀번호">
+			<br>
+			<c:choose>
+				<c:when test="${check }">
+					<br><input type="checkbox" name="ckid" value="true" checked="checked">
+				</c:when>
+				<c:otherwise>
+					<br><input type="checkbox" name="ckid" value="true"> 로그인 상태 유지
+				</c:otherwise>
+			</c:choose>
+	
+			<br><input type="submit" value="Login" style="margin-top: 10px">
+		</div>	
+	</form>
     <a href="javascript:kakaoLogout();"><img src="../resources/images/kakao_login.png" alt="카카오계정 로그아웃" style="height: 40px;"/></a>
     <a href="javascript:secession();"><img src="../resources/images/kakao_login.png" alt="카카오계정 회원탈퇴" style="height: 40px;"/></a>
 </div>
