@@ -47,12 +47,17 @@
 	<beans:bean class="com.smtr.controller.LoginController">
 		<!-- <beans:constructor-arg ref="memberService"/> -->
 	</beans:bean>
-	<!-- serarchController -->
+	<!-- searchController -->
 	<beans:bean class="com.smtr.controller.SearchController">
 	 	<beans:constructor-arg ref="recipeService"/>
 	 	<beans:constructor-arg ref="divisionService"/>
 	 	
 	</beans:bean>
+	
+	<!-- recipeWriteController -->
+	<beans:bean class="com.smtr.controller.RecipeWriteController">
+		<beans:constructor-arg ref="recipeService"/>
+	</beans:bean>	
 	<!-- MemberController -->
 	<beans:bean class="com.smtr.controller.MemberController">
 		

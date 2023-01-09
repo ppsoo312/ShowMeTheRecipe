@@ -90,8 +90,8 @@
 				</div>
 		
 				<div class="mr-3">
-					<img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgWrite.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 20px">
-				</div>			
+					<a href="${ pageContext.request.contextPath }/recipeWrite/form"><img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgWrite.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 20px"></a>
+				</div>		
 			</c:when>
 			<c:otherwise>
 				<div class="mr-3">
@@ -99,7 +99,7 @@
 				</div>
 		
 				<div class="mr-3">
-					<img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgWrite.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 20px">
+					<a href="${ pageContext.request.contextPath }/recipeWrite/form"><img class="widget-author-image" src="${ pageContext.request.contextPath }/resources/images/imgWrite.png" style="border-radius: 70%; overflow: hidden; width: 50px; margin-top: 50px; margin-left: 20px"></a>
 				</div>
 			</c:otherwise>
 				
