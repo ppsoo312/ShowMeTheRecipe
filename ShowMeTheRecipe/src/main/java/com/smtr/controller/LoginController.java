@@ -22,12 +22,18 @@ public class LoginController {
 		
 		int loginKind = Integer.parseInt(request.getParameter("loginKind"));
 		
-		String email = request.getParameter("email");
-		String password = request.getParameter("password");
+		//id로 사용할 email
+		String email = null;
+		String password = null;
+		String nickName = null;
+		String photoPath = null;
 		
-		if(loginKind == 2) {
-			
+		if(loginKind == 1) {
+			email = request.getParameter("emailK");
+			nickName = request.getParameter("nickNameK");
+			photoPath = request.getParameter("photoPath");
 		}
+		
 		
 		return ViewPath.MAIN + "index.jsp";
 	}

@@ -25,7 +25,7 @@
 		} else if(document.input.password.value == "") {
 			alert("비밀번호를 입력해주세요");
 			document.input.password.focus();
-		} else {
+		} else if(document.kaka.){
 			document.input.submit();
 		}
 	
@@ -47,7 +47,10 @@
 	</div>
 </div>
 <div align="center" class="container">
-	<a href="javascript:kakaoLogin();"><img class="kakaoB" src="../resources/images/kakao_loginM.png" alt="카카오계정 로그인" style="height: 40px;"/></a>
+	<form action="${ pageContext.request.contextPath }/login/check?loginKind=1" method="post" name="kaka">
+		<input type="hidden" id="emailK"><input type="hidden" id="nickNameK"><input type="hidden" id="profilek">
+		<a href="javascript:kakaoLogin();"><img class="kakaoB" src="../resources/images/kakao_loginM.png" alt="카카오계정 로그인" style="height: 40px;"/></a>
+	</form>
 	<br><br><strong> OR </strong><br>
 	<form action="${ pageContext.request.contextPath }/login/check?loginKind=2" method="post" name="input" onclick="check()">
 		<div class="loginH3_1">
@@ -66,6 +69,7 @@
 			<br><input type="submit" value="Login" style="margin-top: 10px">
 		</div>	
 	</form>
+	<a href="${pageContext.request.contextPath }/member/joinForm">회원가입</a>
     <a href="javascript:kakaoLogout();"><img src="../resources/images/kakao_login.png" alt="카카오계정 로그아웃" style="height: 40px;"/></a>
     <a href="javascript:secession();"><img src="../resources/images/kakao_login.png" alt="카카오계정 회원탈퇴" style="height: 40px;"/></a>
 </div>
@@ -74,6 +78,10 @@
 
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
+    	
+    	let emailK = null;
+    	let profileK = null;
+    	let nickNameK = null;
         window.Kakao.init('1446ed647320403f97e23ec6c394fedf');
 
         function kakaoLogin() {
@@ -85,14 +93,15 @@
                         url: '/v2/user/me',
                         success: (res) => {
                             const kakao_account = res.kakao_account;
-                            alert(Object.entries(kakao_account));
-                            alert(Object.values(kakao_account)[2]['nickname']); // 카톡 닉네임
-                            alert(Object.values(kakao_account)[2]['profile_image_url']); // 카톡 프로필 사진
-                            alert(Object.values(kakao_account)[7]); // 카톡 이메일
-                            //console.log(Object.entries(kakao_account));
-                            //console.log(Object.values(kakao_account)[2]['nickname']); // 카톡 닉네임
-                            //console.log(Object.values(kakao_account)[2]['profile_image_url']); // 카톡 프로필 사진
-                            //console.log(Object.values(kakao_account)[7]); // 카톡 이메일
+                            
+                            emailK = Object.values(kakao_account)[7];
+                            nickNameK = Object.values(kakao_account)[2]['nickname'];
+                            profileK = Object.values(kakao_account)[2]['profile_imge_url'];
+                            //alert(Object.entries(kakao_account));
+                            //alert(Object.values(kakao_account)[2]['nickname']); // 카톡 닉네임
+                            //alert(Object.values(kakao_account)[2]['profile_image_url']); // 카톡 프로필 사진
+                            //alert(Object.values(kakao_account)[7]); // 카톡 이메일
+                            
 
                         }
                     });
